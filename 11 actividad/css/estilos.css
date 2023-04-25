@@ -1,0 +1,26 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.menu{
+    background-color: rgb(4, 4, 119);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.menu p{
+    padding: 20px;
+}
+
+.principal{
+    margin: 15px 30px;
+}
