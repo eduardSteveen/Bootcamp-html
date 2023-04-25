@@ -1,26 +1,35 @@
-
-body{
+*{
     margin: 0;
     padding: 0;
 }
 
-.contenedor{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
 }
 
-.menu{
+div.menu{
     background-color: rgb(4, 4, 119);
     color: white;
-    text-align: center;
-    justify-content: center;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5%;
+    gap: 20px;
 }
 
-.menu p{
-    padding: 20px;
-}
 
 .principal{
-    margin: 15px 30px;
+    padding: 5%;
+    flex-grow: 1;
+}
+
+@media (max-width: 640px){
+    body{
+        flex-direction: column-reverse;
+    }
+    div.menu{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
